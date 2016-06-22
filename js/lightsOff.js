@@ -1,7 +1,7 @@
 "use strict";
 
 (function ( $ ) {
- 
+
   var lightsOffOverlay = $('<section>').addClass('lights-off-overlay')
 
   lightsOffOverlay.append(
@@ -34,7 +34,7 @@ $.fn.lightsOff = function( options ) {
       var el = $(this);
       var introText = el.data('intro') || settings.intro;
       var introPosition = el.data('intro-position') || settings.position;
-      var elOffset = el.offset();
+      var elOffset = el.offset() || settings.offset;
       var elWidth = el.width();
       var elHeight = el.height();
       var squiggleDiv = $('<div>').addClass('squiggle');

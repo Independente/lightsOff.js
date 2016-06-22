@@ -2,8 +2,8 @@
 
 > A lightweight JQuery plugin (6kb minified) to show nice guided introductions of various elements on your page.
 
- - [Demo](http://embibeswapnil.github.io/lightsOff.js/)
-         
+ - [Demo] Soon
+
 ## Setup
 
 lightOff is very simple to set up, follow these three simple steps.
@@ -11,16 +11,23 @@ lightOff is very simple to set up, follow these three simple steps.
 1) Include JQuery, lightsoff.js and lightsoff.css in your page
 
 ```html
-<link href="src/lightsOff.css">	
-<link href="js/jquery.js">	
+<link href="src/lightsOff.css">
+<link href="js/jquery.js">
 <link href="src/lightsOff.min.js">
 ````
 
-2) Add `data-intro` and `data-intro-position` to your HTML elements.
-
+// 2) Add `data-intro` and `data-intro-position` to your HTML elements.
+2) Those will come back soon but are disabled for now!
 ```html
-<a href="example.com" data-intro="Click here to visit example.com" data-intro-position="top">example.com</a>
+ <!--<a href="example.com" data-intro="Click here to visit example.com" data-intro-position="top">example.com</a> -->
 ```
+
+New:
+
+```javascript
+$("#example").lightsOn({intro: "Click here to visit example.com", position: "top"});
+```
+
 
 3) Call this function after your page loads.
 
@@ -28,7 +35,7 @@ lightOff is very simple to set up, follow these three simple steps.
 $.lightsOn();
 ```
 
-## API
+## API (more options coming soon)
 
 ### data-intro
 
@@ -56,25 +63,18 @@ Use this function to turn lights back on.
 $.lightsOff();
 ```
 
-## Author
-**Swapnil Singh**
-
-- [Twitter](https://twitter.com/biryani_hunter)
-- [Github](https://github.com/jsmonk)
-- [Personal page](http://amplifiedmonkeys.com/)  
-
 ## License
 > Copyright (C) 2014 Swapnil Singh (thisisnotaid@gmail.com)
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated 
-documentation files (the "Software"), to deal in the Software without restriction, including without limitation 
-the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, 
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+documentation files (the "Software"), to deal in the Software without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software,
 and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-The above copyright notice and this permission notice shall be included in all copies or substantial portions 
+The above copyright notice and this permission notice shall be included in all copies or substantial portions
 of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED 
-TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL 
-THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF 
-CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 IN THE SOFTWARE.

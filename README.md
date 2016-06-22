@@ -16,13 +16,12 @@ lightOff is very simple to set up, follow these three simple steps.
 <link href="src/lightsOff.min.js">
 ````
 
-// 2) Add `data-intro` and `data-intro-position` to your HTML elements.
-2) Those will come back soon but are disabled for now!
+2) Add `data-intro` and `data-intro-position` to your HTML elements.
 ```html
- <!--<a href="example.com" data-intro="Click here to visit example.com" data-intro-position="top">example.com</a> -->
+ <a href="example.com" data-intro="Click here to visit example.com" data-intro-position="top">example.com</a>
 ```
 
-New:
+or:
 
 ```javascript
 $("#example").lightsOn({intro: "Click here to visit example.com", position: "top"});

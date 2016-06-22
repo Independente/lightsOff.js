@@ -8,24 +8,38 @@
     $('<p>').addClass('lights-on-message')
   );
 
-  $.lightsOff = function( options ) {
+// $.lightsOff = function( options ) {
+$.fn.lightsOff = function( options ) {
+
 
   	if( typeof(options) == "undefined")
       options = {};
 
-    var settings = $.extend({},$.lightsOff.defaults, options);
+    // var settings = $.extend({},$.lightsOff.defaults, options);
+    var settings = $.extend({},$.fn.lightsOff.defaults, options);
 
-    var items = $(document).find('[data-intro]');
+    // var items = $(document).find('[data-intro]');
 
-    items.each(function(){
+    // items.each(function(){
+    //   var el = $(this);
+    //   var introText = el.data('intro');
+    //   var introPosition = el.data('intro-position') || settings.position;
+    //   var elOffset = el.offset();
+    //   var elWidth = el.width();
+    //   var elHeight = el.height();
+    //   var squiggleDiv = $('<div>').addClass('squiggle');
+    //   var squigglePos = {};
+
+    this.each(function(){
       var el = $(this);
-      var introText = el.data('intro');
+      var introText = el.data('intro') || settings.intro;
       var introPosition = el.data('intro-position') || settings.position;
       var elOffset = el.offset();
       var elWidth = el.width();
       var elHeight = el.height();
       var squiggleDiv = $('<div>').addClass('squiggle');
       var squigglePos = {};
+
 
       switch( introPosition )
       {
@@ -87,10 +101,16 @@
     lightsOffOverlay.remove();
   }
 
-  $.lightsOff.defaults = {
+  // $.lightsOff.defaults = {
+  //   'position': 'bottom',
+  //   'font': 'Comic Neue',
+  //   'closeText': 'Click anywhere to dismiss'
+  // };
+  $.fn.lightsOff.defaults = {
     'position': 'bottom',
     'font': 'Comic Neue',
     'closeText': 'Click anywhere to dismiss'
   };
- 
+
+
 }( jQuery ));

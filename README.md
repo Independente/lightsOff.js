@@ -6,7 +6,7 @@
 
 ## Setup
 
-lightOff is very simple to set up, follow these three simple steps.
+lightOff is very simple to set up, follow these two simple steps.
 
 1) Include JQuery, lightsoff.js and lightsoff.css in your page
 
@@ -24,15 +24,15 @@ lightOff is very simple to set up, follow these three simple steps.
 or:
 
 ```javascript
-$("#example").lightsOn({intro: "Click here to visit example.com", position: "top"});
+$("#example").lightsOff({intro: "Click here to visit example.com", position: "top"});
 ```
 
 
-3) Call this function after your page loads.
-
-```javascript
-$.lightsOn();
-```
+[//] # 3) Call this function after your page loads.
+[//] #
+[//] # ```javascript
+[//] # $.lightsOn();
+[//] # ```
 
 ## API (more options coming soon)
 
@@ -59,7 +59,7 @@ Defines the text message to go back.
 Use this function to turn lights back on.
 
 ```javascript
-$.lightsOff();
+$.lightsOn();
 ```
 
 ## License

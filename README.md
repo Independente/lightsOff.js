@@ -8,6 +8,8 @@
 > TODO
 
 - Custom position, offset, sizes
+- Possibility to set custom css class
+
 
 ## Setup
 

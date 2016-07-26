@@ -3,7 +3,7 @@
 > A lightweight JQuery plugin (6kb minified) to show nice guided introductions of various elements on your page.
 
  - [Demo] Soon
- - 
+ 
  
 > TODO
 
